@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Three Months</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+        color: white;
+        font-family: "Georgia", serif;
+        overflow-x: hidden;
+      }
+
+      .container {
+        flex: 1;
+        padding: 2rem 2rem calc(40vh + 2rem) 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .poem {
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.8;
+        margin: 2rem 0 4rem 0;
+        animation: fadeIn 2s ease-in;
+      }
+
+      .images {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .image-placeholder {
+        width: 33.33%;
+        height: auto;
+        max-height: 40vh;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .poem {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 style="text-align: center;">Thank you for being you</h1>
+      <h2 style="text-align: center;">I love you</h2>
+
+      <div class="poem">
+        <h2 style="text-decoration: underline">Between Two Worlds</h2>
+        <p>
+          Where ocean meets the waiting sky<br />
+          Salt-winds carry seabirds high<br />
+          And in that space between the two<br />
+          Our souls collide to free the blue<br /><br />
+
+          Like water drawn through ancient stone<br />
+          We have never been alone<br />
+          Each grain of sand, each drop of rain<br />
+          Carry stories the timelines retain<br /><br />
+
+          Between the core of earth and heaven's height<br />
+          The shadows dance in fading light<br />
+          And fly away as a gentle dove<br />
+          Making way for joyful love
+        </p>
+      </div>
+
+      <div class="images">
+        <img
+          src="IMG_0735.PNG"
+          alt="Image 1"
+          class="image-placeholder"
+        />
+        <img
+          src="IMG_0738.PNG"
+          alt="Image 2"
+          class="image-placeholder"
+        />
+        <img
+          src="IMG_0736.PNG"
+          alt="Image 3"
+          class="image-placeholder"
+        />
+      </div>
+    </div>
+  </body>
+</html>
